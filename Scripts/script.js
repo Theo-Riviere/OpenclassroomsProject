@@ -10,18 +10,15 @@
  * @param {number} nbMotsProposes : le nombre de mots proposés à l'utilisateur
  */
 function afficherResultat(score, nbMotsProposes) {
-  // Récupération de la zone dans laquelle on va écrire le score
   let spanScore = document.querySelector(".zoneScore span");
-  // Ecriture du texte
   let affichageScore = `${score} / ${nbMotsProposes}`;
-  // On place le texte à l'intérieur du span.
   spanScore.innerText = affichageScore;
 }
 
 /**
  * Cette fonction affiche une proposition, que le joueur devra recopier,
  * dans la zone "zoneProposition"
- * @param {string} proposition : la proposition à afficher
+ * @param {string} proposition :
  */
 function afficherProposition(proposition) {
   let zoneProposition = document.querySelector(".zoneProposition");
@@ -60,7 +57,6 @@ function afficherEmail(nom, email, score) {
  * Elle demande à l'utilisateur de choisir entre "mots" et "phrases" et lance la boucle de jeu correspondante
  */
 function lancerJeu() {
-  // Initialisations
   initAddEventListenerPopup();
   let score = 0;
   let i = 0;
@@ -71,7 +67,6 @@ function lancerJeu() {
 
   afficherProposition(listeProposition[i]);
 
-  // Gestion de l'événement click sur le bouton "valider"
   btnValiderMot.addEventListener("click", () => {
     if (inputEcriture.value === listeProposition[i]) {
       score++;

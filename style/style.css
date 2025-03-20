@@ -41,7 +41,7 @@ h3 {
 
 /* Mise en forme des formulaires */
 input[type="radio"] {
-  filter: grayscale(1); /* Grayscale passe le bouton en niveau de gris */
+  filter: grayscale(1);
 }
 
 input[type="text"],
@@ -137,8 +137,6 @@ footer {
 /**
 * Mise en forme des éléments de la zone principale
 */
-
-/* Zone d'options */
 .optionSource {
   margin: 20px;
 }
@@ -147,7 +145,6 @@ footer {
   margin-left: 20px;
 }
 
-/* Zone ou sera affiché le texte (mot ou phrase) à afficher */
 .zoneProposition {
   display: flex;
   align-items: center;
@@ -162,7 +159,6 @@ footer {
   color: var(--color-primary);
 }
 
-/* Zone de saisie */
 .zoneSaisie {
   display: flex;
   justify-content: space-between;
@@ -170,7 +166,6 @@ footer {
   margin-bottom: 30px;
 }
 
-/* Eléments du formulaire de saisie */
 .zoneSaisie input[type="text"] {
   width: 80%;
 }
@@ -246,7 +241,6 @@ footer {
 * Responsive
 */
 
-/* En dessous de 1200 px */
 @media screen and (max-width: 1200px) {
   main {
     width: 60%;
@@ -254,7 +248,6 @@ footer {
   }
 }
 
-/* En dessous de 800 px */
 @media screen and (max-width: 800px) {
   main {
     width: 90%;
